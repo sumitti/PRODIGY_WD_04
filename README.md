@@ -3,7 +3,7 @@
 Welcome to my **Personal Portfolio Website**, a showcase of my skills, projects, and experience as a developer. This portfolio highlights my expertise in web development, problem-solving, and design.  
 
 # 🖥️ *Live Preview*  
-Check out the live version of my portfolio: [Portfolio Website](#add-live-link-here)  
+Check out the live version of my portfolio: [Portfolio Website](https://sumit-developer-portfolio.netlify.app)  
 
 # 📜 *Features*  
 - **Responsive Design**: Optimized for all devices, from desktops to smartphones.  
