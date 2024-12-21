@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sumit - Developer Portfolio</title>    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <img src="./assets/s-logo.svg" alt="logo" />Sumit's Portfolio
+        </div>
+        <div class="right">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home Section -->
+      <section class="firstSection" id="home">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Sumit</span>
+          <div>and I am a passionate</div>
+          <span id="element">Web Developer</span>
+          <div class="btn-container">
+            <a class="btn btn-primary" href="./assets/sumit-resume.pdf" target="_blank" role="button">Download Resume</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/sumit-tiwari-0a25b9257"target="_blank" role="button">Visit LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./assets/self-img.png" class="img-fluid" alt="Developer-image" />
+        </div>
+      </section>
+
+      <!-- Core Skills Section -->
+      <section class="coreSkills">
+        <h1>Core Skills</h1>
+        <ul>
+          <li>
+            <div class="skill">
+              <img src="./assets/html.svg" alt="html-logo" />
+              <div>HTML</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/cpp.svg" alt="css-logo" />
+              <div>CSS</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/js.svg" alt="js-logo" />
+              <div>JavaScript</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/react.svg" alt="react-logo" />
+              <div>React</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/node-js.svg" alt="node-logo" />
+              <div>Node</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/cpp.svg" alt="cpp-logo" />
+              <div>C/C++</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/aws.svg" alt="aws-logo" />
+              <div>AWS</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/sql.svg" alt="sql-logo" />
+              <div>SQL</div>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="./assets/git.svg" alt="git-logo" />
+              <div>Git & GitHub</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- About Section -->
+      <section class="secondSection" id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./assets/self-img.png" alt="Sumit's Picture" />
+          </div>
+          <div class="about-description">
+            <p>
+              Hi, I'm Sumit, a passionate third-year B.Tech Computer Science
+              student with a strong interest in web development,
+              problem-solving, and data structures. I am constantly learning new
+              technologies and working on projects to apply my skills in
+              real-world scenarios.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring innovative tech
+              solutions, contributing to open-source projects, or enjoying music
+              and movies. I believe in continuous growth and love collaborating
+              with like-minded individuals to build impactful projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="thirdSection" id="projects">
+        <h1>My Projects</h1>
+
+        <!-- Bootstrap Carousel -->
+        <div
+          id="projectsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">            
+            <div class="carousel-item active">
+              <div class="project-content">
+                <h3>AudioWaves</h3>
+                <p>A music platform leveraging the Spotify API.</p>                
+                <img
+                  src="./assets/audiowaves.png"
+                  alt="AudioWaves Screenshot"
+                  class="img-fluid mb-3"
+                />
+                <p>
+                  AudioWaves is a music platform that allows users to search for
+                  trending audio tracks and listen to them using the Spotify
+                  API. It provides a seamless user interface for exploring new
+                  music and discovering trends.
+                </p>
+                <a
+                  href="https://audiowaves.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Project</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-content">
+                <h3>Permalist</h3>
+                <p>
+                  A To-Do List Application with user authentication and task
+                  management.
+                </p>
+                <img
+                  src="./assets/permalist.png"
+                  alt="Permalist Screenshot"
+                  class="img-fluid mb-3"
+                />
+                <p>
+                  The To-Do List Application is built with Node.js, Express,
+                  EJS, and PostgreSQL. It features user authentication and
+                  allows users to manage tasks securely, including creating,
+                  updating, and deleting tasks.
+                </p>
+                <a
+                  href="https://to-do-list-pv0s.onrender.com"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Project</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="fourthSection" id="contact">
+        <div class="container text-center">
+          <h1>Contact Me</h1>
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-4">
+              <div class="contact-card">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:sumittiwari1306@gmail.com"
+                    >sumittiwari1306@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="social-media mt-4">
+            <h3>Connect with Me</h3>
+            <a
+              href="https://www.linkedin.com/in/sumit-tiwari-0a25b9257"
+              target="_blank"
+              class="btn btn-link"
+            >
+              <img src="./assets/linkedin.svg" alt="LinkedIn" width="40" />
+            </a>
+            <a
+              href="https://github.com/sumitti"
+              target="_blank"
+              class="btn btn-link"
+            >
+              <img src="./assets/github.svg" alt="GitHub" width="40" />
+            </a>
+            <a
+              href="https://www.hackerrank.com/profile/h1032220299"
+              target="_blank"
+              class="btn btn-link"
+            >
+              <img src="./assets/hackerrank.svg" alt="hackerrank" width="40" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <h3>Sumit's Portfolio</h3>
+        <p>Copyright &copy; 2024 Sumit's Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Web</i> Developer.",
+          "<i>Problem-Solver</i>.",
+          "<i>DSA</i> Enthusiast.",
+          "<i>Tech Innovator</i>.",
+          "<i>Cloud</i> Practitioner.",
+          "<i>Database Expert</i>.",
+          "<i>Innovation Seeker</i>.",
+          "<i>Full-Stack</i> Developer.",
+        ],
+        typeSpeed: 50,
+      });      
+      const navLinks = document.querySelectorAll("nav ul li a");
+      const sections = document.querySelectorAll("section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 90;
+          if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+          }
+        });
+      });
+      function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+    </script>
+  </body>
+</html>
